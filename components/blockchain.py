@@ -98,7 +98,7 @@ def is_valid():
     if is_valid: 
         response = {'message': 'Blockchain is VALID'}
     else:
-        response = {'message': 'ERROR: Blockchain is NOT VALID'}
+        response = {'message': 'ERROR: Blockchain is NOT VALID :('}
     return jsonify(response), 200
 
 #6- running the web app
