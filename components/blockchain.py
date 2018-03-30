@@ -91,7 +91,18 @@ def get_chain():
                 'length': len(blockchain.chain)}
     return jsonify(response), 200
 
-#5- running the web app
+#5- check if valid
+@app.route('/is_valid', methods = ['GET'])
+def is_valid():
+    is_valid = blockchain.is_chain_valid(blockchain.chain)
+    if is_valid: 
+        response = {'message': 'Blockchain is VALID'}
+    else:
+        response = {'message': 'ERROR: Blockchain is NOT VALID'}
+    return jsonify(response), 200
+
+
+#6- running the web app
 app.run(host = '0.0.0.0', port = 5000)
 """
 -find a good http client program to see what's happening w the mining
