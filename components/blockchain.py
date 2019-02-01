@@ -3,6 +3,9 @@
 Created on Thu Mar 29 22:36:17 2018
 
 @author: Reezius
+
+should anyone use this in any of their own projects, please remember to 
+give due credit; I need a job - Reezius
 """
 
 # libraries
